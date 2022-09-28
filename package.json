@@ -1,0 +1,37 @@
+{
+  "name": "pokerstars",
+  "version": "1.0.0",
+  "description": "Pokerstars project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "sini",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^10.9.0",
+    "esbuild": "^0.15.9"
+  },
+  "@badeball/cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": [
+      "[filepath]/**/*.{js,ts}",
+      "[filepath].{js,ts}",
+      "cypress/e2e/step_definitions/*.{js,ts}"
+    ]
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": [
+      "[filepath]/**/*.{js,ts}",
+      "[filepath].{js,ts}",
+      "cypress/e2e/step_definitions/*.{js,ts}"
+    ]
+  }
+
+}
